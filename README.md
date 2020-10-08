@@ -1,24 +1,56 @@
-# README
+## usersテーブル
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| name   | string     | null: false                    |
+| email  | string     | null: false                    |
 
-Things you may want to cover:
+### Association
 
-* Ruby version
+- has_many :trainings
+- has_many :games
+- belongs_to :calender  [](現在のところはルーム機能実装時に多対多になる)
 
-* System dependencies
 
-* Configuration
+## calendersテーブル
+| Column | Type            | Options                        |
+| ------ | --------------- | ------------------------------ |
+| user   | references      | null: false, foreign_key: true |
+| traiing| references      | null: false, foreign_key: true |
+| game   | references      | null: false, foreign_key: true |
 
-* Database creation
+### Association
 
-* Database initialization
+- has_many :user  [](現在のところはルーム機能実装時に多対多になる)
+- has_many :trainings
+- has_many :games
 
-* How to run the test suite
+## trainingsテーブル
+| Column     | Type            | Options                        |
+| ---------- | --------------- | ------------------------------ |
+| good       | string          | null: false                    |
+| improvement| string          | null: false                    |
+| menu       | string          | null: false                    |
+| why        | string          | null: false                    |
 
-* Services (job queues, cache servers, search engines, etc.)
+### Association
 
-* Deployment instructions
+- belongs_to :user
+- belongs_to :calender
+- belongs_to :game
 
-* ...
+## gamesテーブル
+| Column      | Type            | Options                        |
+| ----------- | --------------- | ------------------------------ |
+| good        | string          | null: false                    |
+| improvement | string          | null: false                    |
+| data        | string          | null: false                    |
+| menu        | string          | null: false                    | []( menuはtrainingのを使用予定 )
+
+### Association
+
+- belongs_to :user
+- belongs_to :calender
+- has_one    :game  []( menuはtrainingのを使用予定 )
+
+[]( 現状のREADMEなのでgamesの設計が終わったら追加する )
