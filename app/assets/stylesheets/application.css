@@ -12,14 +12,10 @@
  *
  *= require_tree .
  *= require_self
+ *= require fullcalendar
  */
 
  * {
   box-sizing: border-box;
  }
-
-
-* = require_tree .
-* = require_self
-* = require fullcalendar
-*/
+ 
