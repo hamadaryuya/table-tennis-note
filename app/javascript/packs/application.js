@@ -27,3 +27,4 @@ import listPlugin from '@fullcalendar/list';
 let calendar = new Calendar(calendarEl, {
   plugins: [ dayGridPlugin, timeGridPlugin, listPlugin ]
 });
+

@@ -9,10 +9,10 @@
 
 - has_many :trainings
 - has_many :games
-- belongs_to :calender  [](現在のところはルーム機能実装時に多対多になる)
+- belongs_to :events  [](現在のところはルーム機能実装時に多対多になる)
 
 
-## calendersテーブル
+## eventsテーブル
 | Column | Type            | Options                        |
 | ------ | --------------- | ------------------------------ |
 | user   | references      | null: false, foreign_key: true |
@@ -36,7 +36,7 @@
 ### Association
 
 - belongs_to :user
-- belongs_to :calender
+- belongs_to :event
 - belongs_to :game
 
 ## gamesテーブル
@@ -50,7 +50,7 @@
 ### Association
 
 - belongs_to :user
-- belongs_to :calender
+- belongs_to :event
 - has_one    :game  []( menuはtrainingのを使用予定 )
 
 []( 現状のREADMEなのでgamesの設計が終わったら追加する )
