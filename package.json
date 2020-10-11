@@ -5,6 +5,8 @@
     "@fullcalendar/core": "^5.3.1",
     "@fullcalendar/daygrid": "^5.3.2",
     "@fullcalendar/interaction": "^5.3.1",
+    "@fullcalendar/list": "^5.3.1",
+    "@fullcalendar/timegrid": "^5.3.1",
     "@rails/actioncable": "^6.0.0-alpha",
     "@rails/activestorage": "^6.0.0-alpha",
     "@rails/ujs": "^6.0.0-alpha",
