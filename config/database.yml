@@ -52,3 +52,6 @@ production:
   database: table_tennis_note_production
   username: table_tennis_note
   password: <%= ENV['TABLE_TENNIS_NOTE_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5

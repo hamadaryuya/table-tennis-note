@@ -58,3 +58,6 @@ end
 gem 'devise'
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
+group :production do
+  gem 'pg'
+end
