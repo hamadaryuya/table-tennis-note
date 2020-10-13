@@ -85,6 +85,7 @@ m = Module.new do
 
     activate_bundler
   end
+  
 
   def activate_bundler
     gem_error = activation_error_handling do
