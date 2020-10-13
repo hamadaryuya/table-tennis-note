@@ -20,12 +20,8 @@ require("jquery_ujs")
 // const imagePath = (name) => images(name, true)
 
 
-import { Calendar } from '@fullcalendar/core';
-import dayGridPlugin from '@fullcalendar/daygrid';
-import timeGridPlugin from '@fullcalendar/timegrid';
-import listPlugin from '@fullcalendar/list';
+//= require moment 
+//= require fullcalendar
+//= require fullcalendar/locale-all
 
-let calendar = new Calendar(calendarEl, {
-  plugins: [ dayGridPlugin, timeGridPlugin, listPlugin ]
-});
-
+$('#calendar').fullCalendar({});

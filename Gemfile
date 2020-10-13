@@ -57,3 +57,5 @@ group :production do
 end
 gem 'devise'
 gem "jquery-rails"
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
