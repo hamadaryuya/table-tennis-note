@@ -264,7 +264,6 @@ DEPENDENCIES
   devise
   fullcalendar-rails
   jbuilder (~> 2.7)
-  jquery-rails
   listen (>= 3.0.5, < 3.2)
   momentjs-rails
   mysql2 (>= 0.4.4)
