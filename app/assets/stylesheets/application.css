@@ -13,9 +13,9 @@
  * {
   box-sizing: border-box;
  }
- 
+ */
  *= require_tree .
  *= require fullcalendar
  *= require_self
- */
+ 
  
